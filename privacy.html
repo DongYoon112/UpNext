@@ -3,141 +3,254 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UpNext Privacy Policy</title>
+<title>UNBND Privacy Policy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header class="brand">
-    <div class="name"><a href="index.html" style="color:inherit;text-decoration:none">UpNext</a></div>
+    <div class="name"><a href="index.html" style="color:inherit;text-decoration:none">UNBND</a></div>
     <div class="tag">Privacy Policy</div>
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted small">Last updated 16 September 2026. This policy covers the UpNext mobile app and the UpNext
-  backend that serves it.</p>
+  <p class="muted small">Last updated 20 September 2026. This policy covers the UNBND mobile app (Android and iOS)
+  and the backend that serves it. UNBND was previously called UpNext, and before that CareerGOAT; it is the same
+  app and the same developer.</p>
 
   <h2>Who is responsible</h2>
-  <p>UpNext is built and operated by an individual developer. For any privacy question, or to ask what data is held
-  about you, email <a class="email" href="mailto:gucciyd248@gmail.com?subject=UpNext%20privacy%20question">gucciyd248@gmail.com</a>.</p>
+  <p>UNBND is built and operated by an individual developer. For any privacy question, or to ask what data is held
+  about you, email <a class="email" href="mailto:gucciyd248@gmail.com?subject=UNBND%20privacy%20question">gucciyd248@gmail.com</a>.</p>
 
-  <h2>What UpNext collects</h2>
+  <h2>The three roles</h2>
+  <p>Every account is a <strong>student</strong>, a <strong>recruiter</strong> or an <strong>organizer</strong>, chosen
+  at sign-up. The role is fixed for the life of the account and decides what you see and what others see of you.
+  Students join booth queues. Recruiters run a booth's queue and see the students who joined it. Organizers run a
+  fair and see the queues at its booths.</p>
+
+  <h2>What UNBND collects</h2>
 
   <h3>Your account</h3>
   <ul>
-    <li><strong>Email address and password.</strong> You create an account with an email address and a password.
-    The password is handled by our authentication provider (Supabase) and is stored only as a hash — UpNext never
-    sees or stores your password in readable form, and no one at UpNext can look it up.</li>
-    <li><strong>Display name</strong> — the name you type at sign-up.</li>
-    <li><strong>Role</strong> — student, recruiter, or organizer, and the date your account was created.</li>
+    <li><strong>Email address and password.</strong> Authentication is handled by Supabase. The password is stored
+    only as a hash — UNBND never sees or stores it in readable form, and nobody at UNBND can look it up.</li>
+    <li><strong>Display name</strong> — the name you type at sign-up. If you leave it blank, the part of your email
+    address before the @ is used instead.</li>
+    <li><strong>Role</strong> (student, recruiter or organizer) and the date the account was created.</li>
   </ul>
+
+  <h3>Your major — students, optional</h3>
+  <p>A student can pick one major from a standard list (the U.S. Department of Education's CIP 2020 program list).
+  It is stored as a code and is optional: the app works without it. Recruiters at booths you join can see it, and it
+  is included when a recruiter exports their student list.</p>
+
+  <h3>Your headshot — optional</h3>
+  <p>Students and recruiters can add a photo of themselves. It is optional, you are asked once, and you can skip it,
+  replace it or remove it at any time from <strong>Account</strong>. Organizers are not offered one. See
+  <a href="#headshots">Headshots in detail</a> below.</p>
 
   <h3>Your queue activity</h3>
   <ul>
-    <li>Which booths you joined and your place in each queue, as a ticket number.</li>
-    <li>Timestamps for what happened to each ticket: when you joined, when you were called, when you checked in,
-    when the conversation started and finished, and if the ticket was cancelled or expired — including the reason a
-    ticket was cancelled.</li>
-    <li>Which recruiter called you or checked you in.</li>
+    <li>Which booths you joined, and your place in each queue as a ticket number.</li>
+    <li>Timestamps for what happened to each ticket: joined, called, checked in, conversation started, completed,
+    cancelled or expired — including the reason a ticket was cancelled.</li>
+    <li>Which recruiter called you, checked you in, or talked to you.</li>
   </ul>
 
   <h3>If you are a recruiter or organizer</h3>
   <ul>
-    <li>Which booths you are a member of, and the role you hold at that booth.</li>
-    <li>Content you create in the app: event name, date and location; company name and description; booth table
-    label and settings.</li>
+    <li>Which booths you belong to and the role you hold at each one.</li>
+    <li>Content you create: fair name, date and location; company name and description; booth table label, the
+    majors the booth is hiring for, and booth settings.</li>
+    <li><strong>Students you star.</strong> A recruiter can star a student they met. The star records the student,
+    the booth and the time, and is visible only to the recruiter who made it.</li>
   </ul>
 
   <h3>Notifications</h3>
   <ul>
-    <li>If you turn on queue notifications, UpNext stores a <strong>push token</strong> for that device (an
-    anonymous delivery address issued by Expo) and whether the device is Android or iOS.</li>
-    <li>Notifications waiting to be sent are queued on the server with their title and text (for example, "you're
-    up next at this booth") until delivery succeeds or permanently fails.</li>
+    <li>If you allow notifications, UNBND stores a <strong>push token</strong> for that device — a delivery address
+    issued by the Expo push service — and whether the device is Android or iOS.</li>
+    <li>Notifications waiting to be sent are queued on the server with their title and text (for example, "You're up:
+    Acme Robotics — go to Table A1 now") until delivery succeeds or permanently fails. A notification names the
+    company and table, and says where you are in that queue.</li>
   </ul>
+
+  <h3>Sign-in security records</h3>
+  <p>The authentication service records each sign-in session with the <strong>IP address</strong> and
+  <strong>device/browser identification string</strong> it came from, and keeps an authentication audit log of events
+  such as sign-up, sign-in, sign-out and token refresh. These records exist to secure accounts. They are kept by the
+  authentication service and are not shown to recruiters, organizers or other users.</p>
 
   <h3>On your device</h3>
   <ul>
-    <li>Your signed-in session is stored on the device so you do not have to sign in every time. Signing out
-    removes it.</li>
-    <li><strong>Camera:</strong> used only to read booth QR codes. UpNext does not take, save, or upload photos or
-    video, and the camera image never leaves your device.</li>
+    <li>Your signed-in session, so you do not have to sign in every time. Signing out removes it.</li>
+    <li>A note of whether you chose to skip the headshot prompt, so you are not asked again.</li>
+    <li>On Android, the state of the live queue notification, so it only rings when your position actually changes.</li>
+    <li>When a recruiter exports a student list, the CSV file is written to the app's cache folder on that
+    recruiter's device and handed to the system share sheet.</li>
   </ul>
 
-  <h2>What UpNext does not collect</h2>
-  <p>UpNext contains no analytics, advertising, attribution, or crash-reporting SDKs. It does not collect your
-  location, contacts, photo library, calendar, microphone audio, advertising identifier, or any payment
-  information, and it does not track you across other apps or websites. UpNext does not sell or rent personal data,
-  and does not use it for advertising.</p>
+  <h3>The camera</h3>
+  <p>The camera is used to read booth QR codes and, if you choose it, to take your headshot. Nothing from the QR
+  scanner is stored or uploaded — that camera image never leaves your device. A headshot you take on purpose
+  <em>is</em> uploaded, as described below.</p>
 
-  <h2>Why UpNext uses this data</h2>
+  <h2 id="headshots">Headshots in detail</h2>
+  <ul>
+    <li><strong>Why.</strong> So the two people who are about to meet can recognise each other at a crowded fair. A
+    recruiter sees the student's face when they call them and on the student list; a student sees the face of the
+    recruiter who called them.</li>
+    <li><strong>How it is made.</strong> You take a photo or pick one from your photo library. The app crops it
+    square, shrinks it to 512 pixels and saves it as a JPEG before uploading. Only that processed image is uploaded,
+    not the original file and none of its other photos.</li>
+    <li><strong>Where it is stored.</strong> In the project's <code>avatars</code> file storage, under a folder named
+    with your account's internal id, as a single file named <code>avatar.jpg</code>. Uploading a new one replaces the
+    old one. Only you can upload, replace or delete the file at that path.</li>
+    <li><strong>Who can see it.</strong> The app shows it to the people described in the table below. Beyond that,
+    <strong>the storage bucket is public</strong>: the image file is served over the web to anyone who has its exact
+    address, without signing in. The address contains your account's internal identifier, so it is not listed or
+    searchable anywhere and cannot be guessed from your name or email, but it is not secret either. Anyone you send
+    the link to, and anyone the app has shown it to whose device cached it, can open it. Do not use a photo you would
+    not be comfortable being seen this way.</li>
+    <li><strong>On Android</strong>, the queue notification downloads the other person's headshot to draw it in the
+    notification, and keeps it in memory while that notification is on screen.</li>
+    <li><strong>How long it is kept.</strong> Until you replace it, remove it, or delete your account. There is no
+    automatic expiry.</li>
+    <li><strong>Deleting it.</strong> <strong>Account → Change photo → Remove photo</strong> deletes the file and
+    clears the link on your profile. Deleting your account deletes the file too. A copy already downloaded to
+    somebody's device, or exported by a recruiter, is outside UNBND's control.</li>
+    <li>UNBND does not run face recognition and does not use your photo for anything except showing it to the people
+    below.</li>
+  </ul>
+
+  <h2>Who can see what</h2>
+  <p>Access is enforced on the server, per request, from your signed-in identity — not in the app. What each role
+  can see:</p>
+  <ul>
+    <li><strong>Other students</strong> see nothing about you. Students cannot read each other's tickets, names,
+    photos or majors. A booth's waiting count is a number with no names attached.</li>
+    <li><strong>Recruiters at a booth you joined</strong> see your display name, your headshot, your major, your
+    <strong>email address</strong>, your ticket number and its status, and when you were last seen at their fair.
+    They can star you and <strong>export that list — including your email address — as a CSV file</strong> to
+    anywhere their phone can share a file. This is the point of the app: joining a booth's queue hands the employer
+    your contact details. If you do not want an employer to have your email address, do not join their queue.</li>
+    <li>That access <strong>does not expire</strong>. A recruiter keeps seeing you in their student list for as long
+    as both accounts exist and your ticket history exists, at every fair you met them at.</li>
+    <li><strong>Recruiters at booths you never joined</strong> see nothing about you.</li>
+    <li><strong>The organizer of a fair</strong> sees the tickets at that fair's booths and the names, headshots and
+    majors of the students holding them, plus per-booth counts. The organizer does <em>not</em> get student email
+    addresses and has no CSV export.</li>
+    <li><strong>Recruiters and organizers</strong> can see each other's names within a fair or booth they share.
+    Organizers are not offered a headshot.</li>
+    <li><strong>Nobody</strong> can read your password, your push tokens, or another account's sign-in records.</li>
+  </ul>
+
+  <h2>What UNBND does not collect</h2>
+  <p>UNBND contains no analytics, advertising, attribution or crash-reporting SDK. It does not collect your location,
+  your contacts, your calendar, your photo library beyond the single headshot you pick, microphone audio, an
+  advertising identifier, or any payment information. It does not track you across other apps or websites, does not
+  sell or rent personal data, and does not use your data for advertising. There are no third-party ad or analytics
+  networks in the app.</p>
+  <p class="small">Two technical notes, for completeness. The app is built with Expo; the Google Play Install
+  Referrer library ships inside one of its components and the app declares the matching permission, but UNBND never
+  calls it and collects no install-referrer data. Apple and Google collect their own crash and performance data from
+  apps on their platforms under their own privacy policies; UNBND neither receives nor reads it.</p>
+
+  <h2>Why UNBND uses this data</h2>
   <ul>
     <li>To run the queue: place you in line, show your position, and call you when it is your turn.</li>
+    <li>To let the two people meeting recognise each other at the table.</li>
     <li>To send the notifications you asked for.</li>
-    <li>To show recruiters and organizers who is waiting at their own booth or event, and nobody else's.</li>
-    <li>To keep the account secure and to answer your support emails.</li>
+    <li>To show recruiters and organizers who is at their own booth or fair, and nobody else's, and to let a
+    recruiter keep a record of the students they met.</li>
+    <li>To keep accounts secure and to answer your support emails.</li>
   </ul>
-  <p>Access is enforced on the server: students can read only their own tickets, and recruiters and organizers can
-  read only the booths and events they belong to.</p>
 
   <h2>Who else processes your data</h2>
   <ul>
-    <li><strong>Supabase</strong> — hosts the UpNext database, authentication, and live updates, on infrastructure
-    located in the United States.</li>
-    <li><strong>Expo push notification service</strong> — delivers queue notifications to your device. It receives
-    the device push token and the text of the notification.</li>
-    <li><strong>Google (Firebase Cloud Messaging)</strong> — delivers notifications to Android devices, and
-    <strong>Apple (APNs)</strong> does the same on iOS. These are the platform delivery channels the notification
-    passes through.</li>
+    <li><strong>Supabase</strong> — hosts the database, authentication, file storage and live updates, on
+    infrastructure in the United States.</li>
+    <li><strong>Expo push notification service</strong> — delivers queue notifications. It receives your device's
+    push token and the title and text of each notification.</li>
+    <li><strong>Google (Firebase Cloud Messaging)</strong> on Android and <strong>Apple (APNs)</strong> on iOS — the
+    platform channels each notification passes through. Google's messaging component also registers an app instance
+    identifier for your installation with Google in order to deliver messages.</li>
+    <li><strong>Resend</strong> — the mail service that delivers account emails, such as the sign-up confirmation.</li>
+    <li><strong>Google Fonts</strong> — when a recruiter uses the booth's <em>Print / save as PDF</em> sheet, the
+    print preview loads a font from Google's font service, which reveals that device's IP address to Google. No
+    account or queue data is sent.</li>
+    <li><strong>Whoever a recruiter shares an export with.</strong> A CSV a recruiter exports leaves UNBND entirely.
+    Where it goes after that is up to that recruiter and their employer.</li>
   </ul>
-  <p>These providers process the data on UpNext's behalf in order to run the service. UpNext does not share your
-  data with anyone else.</p>
+  <p>Apart from the student information recruiters and organizers see by design, UNBND does not share your data with
+  anyone else.</p>
 
-  <h2>Permissions UpNext asks for</h2>
+  <h2>Permissions UNBND asks for</h2>
   <ul>
-    <li><strong>Camera</strong> — to scan booth QR codes. You can decline and still join a queue with a booth code
-    typed by hand.</li>
-    <li><strong>Notifications</strong> — to tell you when your turn is coming. You can decline and still use the
-    app; the queue updates on screen while UpNext is open.</li>
+    <li><strong>Camera</strong> — to scan booth QR codes, and to take a headshot if you choose that. You can decline
+    and still join a queue with a booth code typed by hand.</li>
+    <li><strong>Photos</strong> — only if you choose a headshot from your library. You can decline.</li>
+    <li><strong>Notifications</strong> — to tell you when your turn is coming. You can decline and still use the app;
+    the queue updates on screen while UNBND is open.</li>
   </ul>
 
   <h2>How long data is kept</h2>
   <ul>
-    <li><strong>Your account, profile, and queue history</strong> are kept for as long as your account exists.
-    UpNext does not currently delete old tickets automatically. You can have all of it deleted at any time — see
-    <a href="delete-account.html">Delete your account and data</a>.</li>
-    <li><strong>Push tokens</strong> are removed automatically when the delivery service reports that the device is
-    no longer registered — for example after you uninstall UpNext — and when your account is deleted.</li>
-    <li><strong>Queued notifications</strong> are held until they are sent or permanently fail, and are deleted
-    with your account.</li>
-    <li><strong>Backups.</strong> The database is backed up automatically by Supabase and those backups are rotated.
-    Data you delete stays in an existing encrypted backup until that backup ages out of the rotation, after which it
-    is gone. Backups are never used to restore an account that was deleted on request.</li>
-    <li><strong>Support email.</strong> If you email the support address, that message stays in the support inbox as
-    a record of the request and how it was handled.</li>
+    <li><strong>Your account, profile, headshot, major and queue history</strong> are kept for as long as your
+    account exists. UNBND does not delete old tickets automatically and has no scheduled clean-up. You can have all
+    of it deleted at any time — see <a href="delete-account.html">Delete your account and data</a>.</li>
+    <li><strong>Stars and student lists</strong> live as long as both accounts do. Deleting your account removes you
+    from every recruiter's list.</li>
+    <li><strong>Push tokens</strong> are deleted when the delivery service reports the device is no longer
+    registered — for example after you uninstall UNBND — and when your account is deleted.</li>
+    <li><strong>Queued notifications</strong> are held until they are sent or permanently fail. Rows that failed are
+    kept as a record of the failure, and are deleted with your account.</li>
+    <li><strong>Sign-in security records.</strong> Sessions end when you sign out or they expire. The authentication
+    audit log is kept by the authentication service, is not cleared when an account is deleted, and can still contain
+    the email address the events belonged to. This is described honestly here rather than promised away; if you want
+    those entries removed as well, say so in your deletion request.</li>
+    <li><strong>Backups.</strong> The hosting platform takes automatic backups on its own schedule and rotates them.
+    Data you delete can remain inside an existing backup until that backup ages out. Backups are never used to
+    restore an account that was deleted on request.</li>
+    <li><strong>Exports.</strong> A CSV a recruiter already exported is not reachable by UNBND and is not deleted
+    when you delete your account.</li>
+    <li><strong>Support email.</strong> If you email the support address, the message stays in the support inbox as a
+    record of the request and how it was handled.</li>
   </ul>
+  <p class="small">Where this policy does not state a number of days, it is because no fixed period is enforced in
+  the system. Rather than publish a retention period the code does not keep, UNBND says plainly what triggers
+  deletion.</p>
 
   <h2>Your choices</h2>
   <ul>
-    <li><strong>Delete everything</strong> — see <a href="delete-account.html">Delete your account and data</a>.</li>
-    <li><strong>Turn off notifications</strong> — revoke the notification permission for UpNext in your device
+    <li><strong>Delete everything</strong> — in the app, <strong>Account → Delete account</strong> deletes it
+    immediately. Or see <a href="delete-account.html">Delete your account and data</a>.</li>
+    <li><strong>Remove your headshot</strong> — <strong>Account → Change photo → Remove photo</strong>.</li>
+    <li><strong>Change or clear your major</strong> — <strong>Account → Major</strong>, then pick another or tap
+    <em>Clear</em>.</li>
+    <li><strong>Turn off notifications</strong> — revoke the notification permission for UNBND in your device
     settings at any time.</li>
-    <li><strong>Turn off camera access</strong> — revoke the camera permission for UpNext in your device settings.</li>
-    <li><strong>Ask what is held about you, or ask for a correction</strong> — email the support address and say
-    what you need.</li>
+    <li><strong>Turn off camera or photo access</strong> — revoke the permission in your device settings.</li>
+    <li><strong>Ask what is held about you, or ask for a correction</strong> — email the support address.</li>
   </ul>
 
   <h2>Security</h2>
-  <p>Traffic between the app and the server is encrypted in transit, and the database is encrypted at rest by the
-  hosting provider. Passwords are stored only as hashes. Every queue action runs through server-side rules that
-  check what your account is allowed to see and do. No system is perfectly secure, but UpNext is built so that one
-  account cannot read another account's data.</p>
+  <p>Traffic between the app and the server is encrypted in transit with HTTPS and TLS, including the live queue
+  connection and every notification sent for delivery. Data at rest is protected by the hosting platform's own
+  storage encryption; UNBND does not add a second layer on top. Passwords are stored only as hashes. Every queue
+  action runs through server-side rules that check what your account is allowed to see and do, and those rules — not
+  the app — are what keeps one account out of another's data. The one deliberate exception is the headshot file,
+  which is served publicly by address as described above. No system is perfectly secure.</p>
+
+  <h2>Who UNBND is for</h2>
+  <p>UNBND is built for career fairs at colleges and universities. It is not directed to children under 13, and
+  accounts should not be created for them.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version is published on this page with a new "last updated" date.</p>
 
   <h2>Contact</h2>
-  <p><a class="email" href="mailto:gucciyd248@gmail.com?subject=UpNext%20privacy%20question">gucciyd248@gmail.com</a></p>
+  <p><a class="email" href="mailto:gucciyd248@gmail.com?subject=UNBND%20privacy%20question">gucciyd248@gmail.com</a></p>
 
   <footer>
     <a href="index.html">Support home</a> · <a href="delete-account.html">Delete account</a>
