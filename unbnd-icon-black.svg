@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">UNBND app icon</title>
+  <desc id="desc">White open rounded loop with a detached teardrop above its opening on a white background. Vector reconstruction of concept 18.</desc>
+  <rect width="1024" height="1024" fill="#ffffff"/>
+  <g fill="#000000">
+    <path d="M 571,274
+      C 544,257 515,255 486,262
+      C 340,287 229,400 222,544
+      C 214,686 310,796 451,817
+      C 590,838 724,756 763,623
+      C 780,568 783,517 765,473
+      C 754,446 732,433 707,437
+      C 674,441 654,467 654,500
+      C 658,555 646,605 612,644
+      C 574,688 519,708 464,698
+      C 386,684 337,623 341,551
+      C 345,471 408,397 488,381
+      C 518,375 548,378 571,358
+      C 598,335 600,293 571,274 Z"/>
+    <path d="M 784,206
+      C 758,209 704,229 672,252
+      C 639,275 628,307 640,340
+      C 652,372 681,391 710,382
+      C 750,369 777,316 792,268
+      C 799,246 804,220 800,211
+      C 797,206 791,204 784,206 Z"/>
+  </g>
+</svg>
