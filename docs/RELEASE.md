@@ -10,7 +10,9 @@ name and `/UpNext/` base path: store links depend on them.
   root of `main`; `.nojekyll` is preserved. No custom build or dependencies are needed.
 - Check the workflow for the pushed commit, then fetch all three public URLs and
   compare the returned content with the local files. A push alone is not deployment proof.
-- Public routes: `/UpNext/`, `/UpNext/privacy.html`, `/UpNext/delete-account.html`.
+- Public routes: `/UpNext/`, `/UpNext/privacy.html`, `/UpNext/delete-account.html`, `/UpNext/auth-callback.html`.
+
+Email verification deployment and testing are documented in [EMAIL_VERIFICATION.md](EMAIL_VERIFICATION.md).
 
 ## Sources and checks — 20 September 2026
 
@@ -19,8 +21,9 @@ The five supplied UNBND assets match the approved mobile brand assets byte-for-b
 The prior local commit `9464254` was one commit ahead of origin and is preserved.
 There were no tracked local edits or applicable AGENTS.md instructions.
 
-The website uses system fonts and local assets; no scripts, external fonts, tracking,
-or store download badges. The release handoff reports TestFlight testing and no
+The informational pages use system fonts and local assets. The verification callback
+uses local Inter fonts and a script that talks only to Supabase Auth; there is no
+tracking or store download badge. The release handoff reports TestFlight testing and no
 public store release; no public download URL was supplied or verified.
 
 Browser verification uses Chromium at 320, 390, 768, and 1440 pixels: all pages,

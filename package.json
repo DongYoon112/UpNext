@@ -1,0 +1,6 @@
+{
+  "name": "unbnd-website",
+  "private": true,
+  "scripts": { "test": "node --test tests/auth-callback.test.cjs" },
+  "devDependencies": { "playwright": "^1.63.0" }
+}

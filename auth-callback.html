@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://xzchqzmtjedljszmeqoq.supabase.co; base-uri 'none'; form-action 'none'">
+<title>Email verification — UNBND</title>
+<link rel="icon" href="unbnd-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="auth-callback.css">
+<script src="auth-config.js" defer></script>
+<script src="auth-callback.js" defer></script>
+</head>
+<body>
+<main>
+  <img class="logo" src="unbnd-icon-1024.png" alt="UNBND" width="88" height="88">
+  <div role="status" aria-live="polite" aria-atomic="true">
+    <h1 id="result-title">Checking verification…</h1>
+    <p id="result-body">Please wait while we check your email verification.</p>
+  </div>
+  <a id="open-app" class="button" href="unbnd:///" hidden>Open UNBND</a>
+  <p id="open-help" class="small" hidden>On your phone, open the installed UNBND app and sign in with your email and password if prompted. If the button does not open the app, open UNBND from your home screen.</p>
+  <button id="retry" class="secondary" type="button" hidden>Try again</button>
+  <form id="resend-form" hidden>
+    <label for="email">Account email</label>
+    <input id="email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="you@school.edu" required maxlength="254">
+    <button id="resend" type="submit">Send another verification email</button>
+    <p id="resend-status" class="small" role="status" aria-live="polite"></p>
+  </form>
+  <noscript><p>JavaScript is needed to check this link. Enable it and reopen the link from your email. You can also open UNBND to sign in or request another verification email.</p></noscript>
+  <a class="support small" href="mailto:gucciyd248@gmail.com?subject=UNBND%20email%20verification">Need help?</a>
+</main>
+</body>
+</html>
