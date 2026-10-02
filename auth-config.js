@@ -2,5 +2,5 @@
 window.UNBND_AUTH = Object.freeze({
   "url": "https://xzchqzmtjedljszmeqoq.supabase.co",
   "key": "sb_publishable_c3xjbyNOJmvEQFTAn846vg_wHWu8Qhi",
-  "redirect": "https://dongyoon112.github.io/UpNext/auth-callback.html"
+  "redirect": "https://auth.upnextcareers.tech/auth-callback.html"
 });
